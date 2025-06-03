@@ -16,7 +16,7 @@ data_source = st.sidebar.radio(
 )
 
 if data_source == "Repo CSV":
-    df = load_data("sales_data_sample.csv")   # path inside your repo
+    df = load_data("https://github.com/eric-au/streamlit/blob/main/sales_data_sample.csv")   # path inside your repo
 else:
     uploaded = st.file_uploader("Upload a CSV", type="csv")
     if uploaded:
